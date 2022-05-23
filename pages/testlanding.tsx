@@ -1,14 +1,17 @@
-import type { NextPage } from 'next'
+import type { ReactElement } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import { Fragment } from 'react'
 import { NewspaperIcon } from '@heroicons/react/outline'
-import Footer from '../components/Footer'
+
+import Layout from '../components/Layout'
+import type { NextPageWithLayout } from './_app'
+
 import logoSVG from '../public/howard-wangs-logo.svg'
 import chefFlamingWokFlyingFood from '../public/images/chef-flaming-wok-flying-food.jpg'
 import varietyChineseDishes from '../public/images/variety-chinese-dishes.jpg'
 
-const TestLanding: NextPage = () => (
+const Page: NextPageWithLayout = () => (
   <>
     <Head>
       <title>Uptown | Howard Wang&lsquo;s Restaurants</title>
@@ -397,8 +400,11 @@ const TestLanding: NextPage = () => (
         </div>
       </div>
     </main>
-    <Footer />
   </>
 )
 
-export default TestLanding
+Page.getLayout = function getLayout(page: ReactElement) {
+  return <Layout>{page}</Layout>
+}
+
+export default Page
