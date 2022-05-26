@@ -190,7 +190,7 @@ const Page: NextPageWithLayout = () => (
                       </dt>
                       <dd>
                         <a
-                          href="tel:214-954-9558"
+                          href={`tel:${locationInfo.phone}`}
                           className="flex w-full items-center justify-center rounded-md border border-transparent bg-red-700 px-8 py-3 text-base font-medium text-white hover:bg-red-600 sm:w-fit md:py-4 md:px-10 md:text-lg"
                         >
                           Call now
