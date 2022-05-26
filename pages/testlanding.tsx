@@ -11,6 +11,25 @@ import logoSVG from '../public/howard-wangs-logo.svg'
 import chefFlamingWokFlyingFood from '../public/images/chef-flaming-wok-flying-food.jpg'
 import varietyChineseDishes from '../public/images/variety-chinese-dishes.jpg'
 
+const locationInfo = {
+  locationName: 'uptown',
+  headerBlurb:
+    'Howard Wang‘s Uptown China Brasserie is THE destination for quality Chinese cuisine, great drinks and a relaxing, modern atmosphere.',
+  delivery:
+    'Please call us for take out and delivery orders. We offer curbside pick up and deliver within a 2.5 mile radius.',
+  reservations: 'Please call the restaurant to make a reservation.',
+  hours: [
+    'Mon-Thur: 11am - 2pm; 4pm - 9pm',
+    'Fri: 11am - 2pm; 4pm - 10pm',
+    'Sat: 11:30am - 10pm',
+    'Sun: 11:30am - 9pm',
+  ],
+  happyHour: ['Happy hour lounge and patio only:', 'Mon-Fri: 4pm - 7pm'],
+  address: ['3223 Lemmon Ave #103', 'Dallas, TX 75204'],
+  phone: '214-954-9558',
+  fax: '214-954-0988',
+}
+
 const Page: NextPageWithLayout = () => (
   <>
     <Head>
@@ -37,41 +56,35 @@ const Page: NextPageWithLayout = () => (
                   />
                   <span className="block text-red-700">
                     <span className="sr-only">Howard Wang&lsquo;s</span>
-                    uptown
+                    {locationInfo.locationName}
                   </span>
                 </h1>
                 <p className="mt-3 block text-base text-gray-500 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0">
-                  Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure
-                  qui lorem cupidatat commodo. Elit sunt amet fugiat veniam
-                  occaecat fugiat aliqua.
+                  {locationInfo.headerBlurb}
                 </p>
                 <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                   <div className="rounded-md shadow">
                     <a
-                      href="https://order.chownow.com/order/3661/locations"
+                      href="#menu"
                       className="flex w-full items-center justify-center rounded-md border border-transparent bg-red-700 px-8 py-3 text-base font-medium text-white hover:bg-red-600 md:py-4 md:px-10 md:text-lg"
-                      target="_blank"
-                      rel="noreferrer"
                     >
-                      Order Online
+                      Menu
                     </a>
                   </div>
                   <div className="mt-3 sm:mt-0 sm:ml-3">
                     <a
-                      href="http://ezcater.com/brand/pvt/howard-wangs-uptown"
+                      href="#reservations"
                       className="flex w-full items-center justify-center rounded-md border border-transparent bg-black px-8 py-3 text-base font-medium text-white hover:bg-gray-900 md:py-4 md:px-10 md:text-lg"
-                      target="_blank"
-                      rel="noreferrer"
                     >
-                      Catering
+                      Reservations
                     </a>
                   </div>
                   <div className="mt-3 sm:mt-0 sm:ml-3">
                     <a
-                      href="#contact"
+                      href="#specials"
                       className="flex w-full items-center justify-center rounded-md border border-transparent bg-black px-8 py-3 text-base font-medium text-white hover:bg-gray-900 md:py-4 md:px-10 md:text-lg"
                     >
-                      Contact Us
+                      Specials
                     </a>
                   </div>
                 </div>
@@ -115,11 +128,7 @@ const Page: NextPageWithLayout = () => (
                   <dl className="mt-2 text-base text-gray-400">
                     <div>
                       <dt className="sr-only">Delivery and takeout</dt>
-                      <dd>
-                        Please call us for take out and delivery orders. We
-                        offer curbside pick up and deliver within a 2.5 mile
-                        radius.
-                      </dd>
+                      {locationInfo.delivery}
                     </div>
                   </dl>
                 </div>
@@ -130,7 +139,7 @@ const Page: NextPageWithLayout = () => (
                   <dl className="mt-2 text-base text-gray-400">
                     <div>
                       <dt className="sr-only">Reservations</dt>
-                      <dd>Please call the restaurant to make a reservation.</dd>
+                      <dd>{locationInfo.reservations}</dd>
                     </div>
                   </dl>
                 </div>
@@ -141,15 +150,15 @@ const Page: NextPageWithLayout = () => (
                   <dl className="mt-2 text-base text-gray-400">
                     <div>
                       <dt className="sr-only">Hours of operation</dt>
-                      <dd>Mon-Thur: 11am - 2pm; 4pm - 9pm</dd>
-                      <dd>Fri: 11am - 2pm; 4pm - 10pm</dd>
-                      <dd>Sat: 11:30am - 10pm</dd>
-                      <dd>Sun: 11:30am - 9pm</dd>
+                      {locationInfo.hours.map((item) => (
+                        <dd key={item}>{item}</dd>
+                      ))}
                     </div>
                     <div className="mt-1">
                       <dt className="sr-only">Happy hour</dt>
-                      <dd>Happy hour lounge and patio only:</dd>
-                      <dd>Mon-Fri: 4pm - 7pm</dd>
+                      {locationInfo.happyHour.map((item) => (
+                        <dd key={item}>{item}</dd>
+                      ))}
                     </div>
                   </dl>
                 </div>
@@ -160,19 +169,24 @@ const Page: NextPageWithLayout = () => (
                   <dl className="mt-2 text-base text-gray-400">
                     <div>
                       <dt className="sr-only">Address</dt>
-                      <dd>3223 Lemmon Ave #103</dd>
-                      <dd>Dallas, TX 75204</dd>
+                      {locationInfo.address.map((item) => (
+                        <dd key={item}>{item}</dd>
+                      ))}
                     </div>
                     <div className="mt-1">
                       <dt className="sr-only">Phone number</dt>
                       <dd>
-                        phone: <a href="tel:214-954-9558">214-954-9558</a>
+                        phone:{' '}
+                        <a href={`tel:${locationInfo.phone}`}>
+                          {locationInfo.phone}
+                        </a>
                       </dd>
-                      <dd>fax: 214-954-0988</dd>
+                      <dd>fax: {locationInfo.fax}</dd>
                     </div>
                     <div className="mt-3">
                       <dt className="sr-only">
-                        Call 2149549558 for takeout and delivery orders
+                        Call {locationInfo.phone} for takeout and delivery
+                        orders
                       </dt>
                       <dd>
                         <a
