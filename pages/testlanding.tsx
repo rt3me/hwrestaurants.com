@@ -28,6 +28,8 @@ const locationInfo = {
   address: ['3223 Lemmon Ave #103', 'Dallas, TX 75204'],
   phone: '214-954-9558',
   fax: '214-954-0988',
+  menuDinner: '/downloads/menu-dinner.pdf',
+  menuCatering: '/downloads/menu-catering.pdf',
 }
 
 const Page: NextPageWithLayout = () => (
@@ -215,7 +217,7 @@ const Page: NextPageWithLayout = () => (
                   </h3>
                   <div className="mt-2 text-base text-gray-400">
                     <a
-                      href="/downloads/menu-dinner.pdf"
+                      href={locationInfo.menuDinner}
                       className="flex w-full items-center justify-center rounded-md border border-transparent bg-red-700 px-8 py-3 text-base font-medium text-white hover:bg-red-600 sm:w-fit md:py-4 md:px-10 md:text-lg"
                       target="_blank"
                       rel="noreferrer"
@@ -234,7 +236,7 @@ const Page: NextPageWithLayout = () => (
                   </h3>
                   <div className="mt-2 text-base text-gray-400">
                     <a
-                      href="/downloads/menu-catering.pdf"
+                      href={locationInfo.menuCatering}
                       className="flex w-full items-center justify-center rounded-md border border-transparent bg-red-700 px-8 py-3 text-base font-medium text-white hover:bg-red-600 sm:w-fit md:py-4 md:px-10 md:text-lg"
                       target="_blank"
                       rel="noreferrer"
