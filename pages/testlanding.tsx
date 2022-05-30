@@ -2,7 +2,7 @@ import type { ReactElement } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import { Fragment } from 'react'
-import { NewspaperIcon } from '@heroicons/react/outline'
+import { NewspaperIcon } from '@heroicons/react/24/outline'
 
 import Layout from '../components/Layout'
 import type { NextPageWithLayout } from './_app'

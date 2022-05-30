@@ -4,11 +4,11 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Disclosure } from '@headlessui/react'
 import {
-  LocationMarkerIcon,
+  MapPinIcon,
   SparklesIcon,
   InboxIcon,
-} from '@heroicons/react/outline'
-import { ChevronDownIcon } from '@heroicons/react/solid'
+} from '@heroicons/react/24/outline'
+import { ChevronDownIcon } from '@heroicons/react/24/solid'
 
 import Layout from '../components/Layout'
 import type { NextPageWithLayout } from './_app'
@@ -24,7 +24,7 @@ const locations = [
       'The ultra contemporary atmosphere brings customers a feeling of relaxation and comfort while dining with family and friends.',
     addressStreet: '4343 W Northwest Hwy #345',
     addressCityStateZip: 'Dallas, TX 75220',
-    icon: LocationMarkerIcon,
+    icon: MapPinIcon,
     href: '/testlanding',
   },
   {
@@ -33,7 +33,7 @@ const locations = [
       "Since our opening in April of 2011, Howard Wang's Uptown China Brasserie has quickly become THE destination for quality Chinese cuisine.",
     addressStreet: '3223 Lemmon Ave #103',
     addressCityStateZip: 'Dallas, TX 75204',
-    icon: LocationMarkerIcon,
+    icon: MapPinIcon,
     href: '/testlanding',
   },
   {
@@ -42,7 +42,7 @@ const locations = [
       "A new concept by Howard Wang's restaurants, Mandarin to Go is the source for your to go meals.",
     addressStreet: '921 W Commerce St',
     addressCityStateZip: 'Dallas, TX 75208',
-    icon: LocationMarkerIcon,
+    icon: MapPinIcon,
     href: '/testlanding',
   },
   {
@@ -51,7 +51,7 @@ const locations = [
       'We regret to inform you that The Star in Frisco is closing down for good.',
     addressStreet: '6740 Winning Dr Suite 1000',
     addressCityStateZip: 'Frisco, TX 75034',
-    icon: LocationMarkerIcon,
+    icon: MapPinIcon,
     href: '#news',
   },
 ]

@@ -3,14 +3,14 @@ import { Fragment, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import {
   CalendarIcon,
-  ChartBarIcon,
   FolderIcon,
   HomeIcon,
   InboxIcon,
-  MenuIcon,
+  MapPinIcon,
+  Bars3Icon,
   UsersIcon,
-  XIcon,
-} from '@heroicons/react/outline'
+  XMarkIcon,
+} from '@heroicons/react/24/outline'
 import Footer from './Footer'
 import combinationMarkSVG from '../public/howard-wangs-combinationmark.svg'
 
@@ -48,7 +48,7 @@ const navigation = [
   {
     name: 'All Locations',
     href: '/#locations',
-    icon: ChartBarIcon,
+    icon: MapPinIcon,
     current: false,
   },
 ]
@@ -107,7 +107,7 @@ export default function Layout({ children }) {
                       onClick={() => setSidebarOpen(false)}
                     >
                       <span className="sr-only">Close sidebar</span>
-                      <XIcon
+                      <XMarkIcon
                         className="h-6 w-6 text-white"
                         aria-hidden="true"
                       />
@@ -209,7 +209,7 @@ export default function Layout({ children }) {
             onClick={() => setSidebarOpen(true)}
           >
             <span className="sr-only">Open sidebar</span>
-            <MenuIcon className="h-6 w-6" aria-hidden="true" />
+            <Bars3Icon className="h-6 w-6" aria-hidden="true" />
           </button>
           <Image
             className="h-20 w-auto justify-self-center sm:h-10"
