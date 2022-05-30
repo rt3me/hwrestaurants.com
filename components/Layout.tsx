@@ -15,8 +15,18 @@ import Footer from './Footer'
 import combinationMarkSVG from '../public/howard-wangs-combinationmark.svg'
 
 const navigation = [
-  { name: 'Home', href: '/', icon: HomeIcon, current: true },
-  { name: 'To Go', href: '/#togo', icon: UsersIcon, current: false },
+  {
+    name: 'Home',
+    href: '/',
+    icon: HomeIcon,
+    current: true,
+  },
+  {
+    name: 'To Go',
+    href: '/#togo',
+    icon: UsersIcon,
+    current: false,
+  },
   {
     name: 'Catering',
     href: 'https://ezcater.com/brand/pvt/howard-wangs-uptown',
@@ -29,7 +39,12 @@ const navigation = [
     icon: InboxIcon,
     current: false,
   },
-  { name: 'News', href: '/#news', icon: CalendarIcon, current: false },
+  {
+    name: 'News',
+    href: '/#news',
+    icon: CalendarIcon,
+    current: false,
+  },
   {
     name: 'All Locations',
     href: '/#locations',
