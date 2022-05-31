@@ -51,6 +51,12 @@ const navigation = [
     icon: MapPinIcon,
     current: false,
   },
+  {
+    name: 'Uptown',
+    href: '/uptown',
+    icon: MapPinIcon,
+    current: false,
+  },
 ]
 
 function classNames(...classes: string[]) {
