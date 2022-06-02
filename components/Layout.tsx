@@ -46,12 +46,6 @@ const navigation = [
     current: false,
   },
   {
-    name: 'All Locations',
-    href: '/#locations',
-    icon: MapPinIcon,
-    current: false,
-  },
-  {
     name: 'Uptown',
     href: '/uptown',
     icon: MapPinIcon,
