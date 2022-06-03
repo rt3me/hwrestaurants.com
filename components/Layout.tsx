@@ -2,13 +2,13 @@ import Image from 'next/image'
 import { Fragment, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import {
-  CalendarIcon,
-  FolderIcon,
-  HomeIcon,
-  InboxIcon,
-  MapPinIcon,
   Bars3Icon,
-  UsersIcon,
+  CalendarIcon,
+  DevicePhoneMobileIcon,
+  HomeIcon,
+  MapPinIcon,
+  ShoppingBagIcon,
+  TruckIcon,
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 import Footer from './Footer'
@@ -24,19 +24,19 @@ const navigation = [
   {
     name: 'To Go',
     href: '/#togo',
-    icon: UsersIcon,
+    icon: ShoppingBagIcon,
     current: false,
   },
   {
     name: 'Catering',
     href: 'https://ezcater.com/brand/pvt/howard-wangs-uptown',
-    icon: FolderIcon,
+    icon: TruckIcon,
     current: false,
   },
   {
     name: 'Order Online',
     href: 'https://order.chownow.com/order/3661/locations',
-    icon: InboxIcon,
+    icon: DevicePhoneMobileIcon,
     current: false,
   },
   {
