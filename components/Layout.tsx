@@ -46,6 +46,12 @@ const navigation = [
     current: false,
   },
   {
+    name: 'China Grill',
+    href: '/chinagrill',
+    icon: MapPinIcon,
+    current: false,
+  },
+  {
     name: 'Uptown',
     href: '/uptown',
     icon: MapPinIcon,
