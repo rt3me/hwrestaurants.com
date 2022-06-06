@@ -12,9 +12,9 @@ import chefFlamingWokFlyingFood from '../public/images/chef-flaming-wok-flying-f
 import varietyChineseDishes from '../public/images/variety-chinese-dishes.jpg'
 
 const locationInfo = {
-  locationName: 'uptown',
+  locationName: 'china grill preston hollow',
   headerBlurb:
-    'Howard Wang‘s Uptown China Brasserie is THE destination for quality Chinese cuisine, great drinks and a relaxing, modern atmosphere.',
+    'The ultra contemporary atmosphere brings customers a feeling of relaxation and comfort while dining with family and friends. The food speaks for itself and is made only with the finest ingredients.',
   delivery:
     'Please call us for take out and delivery orders. We offer curbside pick up and deliver within a 2.5 mile radius.',
   reservations: 'Please call the restaurant to make a reservation.',
@@ -25,9 +25,9 @@ const locationInfo = {
     'Sun: 11:30am - 9pm',
   ],
   happyHour: ['Happy hour lounge and patio only:', 'Mon-Fri: 4pm - 7pm'],
-  address: ['3223 Lemmon Ave #103', 'Dallas, TX 75204'],
-  phone: '214-954-9558',
-  fax: '214-954-0988',
+  address: ['4343 W. Northwest HWY #345', 'Dallas TX 75220'],
+  phone: '214-366-1606',
+  fax: '214-366-1627',
   menuDinner: '/downloads/menu-dinner.pdf',
   menuCatering: '/downloads/menu-catering.pdf',
 }
