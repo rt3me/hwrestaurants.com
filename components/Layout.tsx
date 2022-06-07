@@ -4,7 +4,6 @@ import { Dialog, Transition } from '@headlessui/react'
 import {
   Bars3Icon,
   CalendarIcon,
-  DevicePhoneMobileIcon,
   HomeIcon,
   MapPinIcon,
   ShoppingBagIcon,
@@ -31,12 +30,6 @@ const navigation = [
     name: 'Catering',
     href: 'https://ezcater.com/brand/pvt/howard-wangs-uptown',
     icon: TruckIcon,
-    current: false,
-  },
-  {
-    name: 'Order Online',
-    href: 'https://order.chownow.com/order/3661/locations',
-    icon: DevicePhoneMobileIcon,
     current: false,
   },
   {

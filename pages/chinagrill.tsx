@@ -15,6 +15,8 @@ const locationInfo = {
   locationName: 'china grill preston hollow',
   headerBlurb:
     'The ultra contemporary atmosphere brings customers a feeling of relaxation and comfort while dining with family and friends. The food speaks for itself and is made only with the finest ingredients.',
+  orderOnline:
+    'https://www.toasttab.com/howard-wangs-preston-hollow-4343-west-northwest-highway-345',
   delivery:
     'Please call us for take out and delivery orders. We offer curbside pick up and deliver within a 2.5 mile radius.',
   reservations: 'Please call the restaurant to make a reservation.',
@@ -75,18 +77,20 @@ const Page: NextPageWithLayout = () => (
                   </div>
                   <div className="mt-3 sm:mt-0 sm:ml-3">
                     <a
-                      href="#reservations"
-                      className="flex w-full items-center justify-center rounded-md border border-transparent bg-black px-8 py-3 text-base font-medium text-white hover:bg-gray-900 md:py-4 md:px-10 md:text-lg"
-                    >
-                      Reservations
-                    </a>
-                  </div>
-                  <div className="mt-3 sm:mt-0 sm:ml-3">
-                    <a
                       href="#specials"
                       className="flex w-full items-center justify-center rounded-md border border-transparent bg-black px-8 py-3 text-base font-medium text-white hover:bg-gray-900 md:py-4 md:px-10 md:text-lg"
                     >
                       Specials
+                    </a>
+                  </div>
+                  <div className="mt-3 sm:mt-0 sm:ml-3">
+                    <a
+                      href={locationInfo.orderOnline}
+                      className="flex w-full items-center justify-center rounded-md border border-transparent bg-black px-8 py-3 text-base font-medium text-white hover:bg-gray-900 md:py-4 md:px-10 md:text-lg"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Order Online
                     </a>
                   </div>
                 </div>
