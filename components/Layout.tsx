@@ -50,6 +50,18 @@ const navigation = [
     icon: MapPinIcon,
     current: false,
   },
+  {
+    name: 'Mandarin Dallas',
+    href: 'https://direct.chownow.com/order/3661/locations/49698',
+    icon: MapPinIcon,
+    current: false,
+  },
+  {
+    name: 'Mandarin Farmers Branch',
+    href: 'https://direct.chownow.com/order/3661/locations/51775',
+    icon: MapPinIcon,
+    current: false,
+  },
 ]
 
 function classNames(...classes: string[]) {

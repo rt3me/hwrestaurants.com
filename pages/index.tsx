@@ -322,11 +322,22 @@ const Page: NextPageWithLayout = () => (
             >
               Call Now
             </a>
-            <Link href="/testlanding">
-              <a className="flex items-center justify-center rounded-md border border-transparent bg-black px-4 py-3 text-base font-medium text-white shadow-sm hover:bg-gray-900">
-                About Mandarin
-              </a>
-            </Link>
+            <a
+              href="https://direct.chownow.com/order/3661/locations/49698"
+              className="flex items-center justify-center rounded-md border border-transparent bg-black px-4 py-3 text-base font-medium text-white shadow-sm hover:bg-gray-900"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Online Dallas
+            </a>
+            <a
+              href="https://direct.chownow.com/order/3661/locations/51775"
+              className="flex items-center justify-center rounded-md border border-transparent bg-black px-4 py-3 text-base font-medium text-white shadow-sm hover:bg-gray-900"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Online Farmers Branch
+            </a>
           </div>
         </div>
       </div>
