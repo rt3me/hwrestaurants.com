@@ -39,13 +39,13 @@ const navigation = [
     current: false,
   },
   {
-    name: 'China Grill',
+    name: 'China Grill Preston Hollow',
     href: '/chinagrill',
     icon: MapPinIcon,
     current: false,
   },
   {
-    name: 'Uptown',
+    name: "Howard Wang's Uptown",
     href: '/uptown',
     icon: MapPinIcon,
     current: false,
