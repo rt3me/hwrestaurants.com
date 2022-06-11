@@ -159,12 +159,16 @@ const Page: NextPageWithLayout = () => (
                         <dd key={item}>{item}</dd>
                       ))}
                     </div>
-                    <div className="mt-1">
-                      <dt className="sr-only">Happy hour</dt>
-                      {locationInfo.happyHour.map((item) => (
-                        <dd key={item}>{item}</dd>
-                      ))}
-                    </div>
+                    {locationInfo.happyHour ? (
+                      <div className="mt-1">
+                        <dt className="sr-only">Happy hour</dt>
+                        {locationInfo.happyHour.map((item) => (
+                          <dd key={item}>{item}</dd>
+                        ))}
+                      </div>
+                    ) : (
+                      ''
+                    )}
                   </dl>
                 </div>
                 <div id="contact">
