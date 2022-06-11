@@ -32,6 +32,7 @@ const locationInfo = {
   fax: '214-366-1627',
   menuDinner: '/downloads/menu-dinner.pdf',
   menuCatering: '/downloads/menu-catering.pdf',
+  specials: false,
 }
 
 const Page: NextPageWithLayout = () => (
@@ -75,14 +76,18 @@ const Page: NextPageWithLayout = () => (
                       Menu
                     </a>
                   </div>
-                  <div className="mt-3 sm:mt-0 sm:ml-3">
-                    <a
-                      href="#specials"
-                      className="flex w-full items-center justify-center rounded-md border border-transparent bg-black px-8 py-3 text-base font-medium text-white hover:bg-gray-900 md:py-4 md:px-10 md:text-lg"
-                    >
-                      Specials
-                    </a>
-                  </div>
+                  {locationInfo.specials ? (
+                    <div className="mt-3 sm:mt-0 sm:ml-3">
+                      <a
+                        href="#specials"
+                        className="flex w-full items-center justify-center rounded-md border border-transparent bg-black px-8 py-3 text-base font-medium text-white hover:bg-gray-900 md:py-4 md:px-10 md:text-lg"
+                      >
+                        Specials
+                      </a>
+                    </div>
+                  ) : (
+                    ''
+                  )}
                   <div className="mt-3 sm:mt-0 sm:ml-3">
                     <a
                       href={locationInfo.orderOnline}
@@ -259,93 +264,101 @@ const Page: NextPageWithLayout = () => (
                 </div>
               </div>
             </div>
-            <div
-              id="specials"
-              className="mt-16 pt-16 lg:grid lg:grid-cols-3 lg:gap-8"
-            >
-              <h2 className="text-2xl font-extrabold text-white sm:text-3xl">
-                Specials
-              </h2>
-              <div className="mt-8 grid grid-cols-1 gap-12 sm:grid-cols-2 sm:gap-x-8 sm:gap-y-12 lg:col-span-2 lg:mt-0">
-                <div>
-                  <h3 className="mb-4 text-5xl font-bold text-gray-100">
-                    Happy Hour: Bites
-                  </h3>
-                  <h4 className="text-gray-400">
-                    4pm - 7pm Monday thru Friday
-                  </h4>
-                  <h4 className="text-gray-400">Lounge, bar, and patio only</h4>
-                  <div className="mt-2 text-base text-gray-400">
-                    <p className="mt-1">
-                      <span className="font-bold text-gray-100">$2</span>
-                      <br />
-                      Egg Roll (1pc)
-                      <br />
-                      Veggie Spring Roll (1pc)
-                      <br />
-                      Edamame (half order)
-                    </p>
-                    <p className="mt-1">
-                      <span className="font-bold text-gray-100">$3</span>
-                      <br />
-                      Crab Wonton (2pc)
-                      <br />
-                      Shrimp Toast (2pc)
-                      <br />
-                      Fried Potstickers (4pc)
-                      <br />
-                      (Chicken or pork)
-                    </p>
-                    <p className="mt-1">
-                      <span className="font-bold text-gray-100">$5</span>
-                      <br />
-                      Asian Chicken Wings (4pc)
-                    </p>
+            {locationInfo.specials ? (
+              <div
+                id="specials"
+                className="mt-16 pt-16 lg:grid lg:grid-cols-3 lg:gap-8"
+              >
+                <h2 className="text-2xl font-extrabold text-white sm:text-3xl">
+                  Specials
+                </h2>
+                <div className="mt-8 grid grid-cols-1 gap-12 sm:grid-cols-2 sm:gap-x-8 sm:gap-y-12 lg:col-span-2 lg:mt-0">
+                  <div>
+                    <h3 className="mb-4 text-5xl font-bold text-gray-100">
+                      Happy Hour: Bites
+                    </h3>
+                    <h4 className="text-gray-400">
+                      4pm - 7pm Monday thru Friday
+                    </h4>
+                    <h4 className="text-gray-400">
+                      Lounge, bar, and patio only
+                    </h4>
+                    <div className="mt-2 text-base text-gray-400">
+                      <p className="mt-1">
+                        <span className="font-bold text-gray-100">$2</span>
+                        <br />
+                        Egg Roll (1pc)
+                        <br />
+                        Veggie Spring Roll (1pc)
+                        <br />
+                        Edamame (half order)
+                      </p>
+                      <p className="mt-1">
+                        <span className="font-bold text-gray-100">$3</span>
+                        <br />
+                        Crab Wonton (2pc)
+                        <br />
+                        Shrimp Toast (2pc)
+                        <br />
+                        Fried Potstickers (4pc)
+                        <br />
+                        (Chicken or pork)
+                      </p>
+                      <p className="mt-1">
+                        <span className="font-bold text-gray-100">$5</span>
+                        <br />
+                        Asian Chicken Wings (4pc)
+                      </p>
+                    </div>
                   </div>
-                </div>
-                <div>
-                  <h3 className="mb-4 text-5xl font-bold text-gray-100">
-                    Happy Hour: Beverages
-                  </h3>
-                  <h4 className="text-gray-400">
-                    4pm - 7pm Monday thru Friday
-                  </h4>
-                  <h4 className="text-gray-400">Lounge, bar, and patio only</h4>
-                  <div className="mt-2 text-base text-gray-400">
-                    <p className="mt-1">
-                      <span className="font-bold text-gray-100">$1</span> Hot
-                      Sake (small)
-                    </p>
-                    <p className="mt-1">
-                      <span className="font-bold text-gray-100">$2</span>{' '}
-                      Sapporo Draft
-                    </p>
-                    <p className="mt-1">
-                      <span className="font-bold text-gray-100">$3</span> Well
-                      Drinks
-                    </p>
-                    <p className="mt-1">
-                      <span className="font-bold text-gray-100">$4</span>{' '}
-                      Selected Wine
-                    </p>
+                  <div>
+                    <h3 className="mb-4 text-5xl font-bold text-gray-100">
+                      Happy Hour: Beverages
+                    </h3>
+                    <h4 className="text-gray-400">
+                      4pm - 7pm Monday thru Friday
+                    </h4>
+                    <h4 className="text-gray-400">
+                      Lounge, bar, and patio only
+                    </h4>
+                    <div className="mt-2 text-base text-gray-400">
+                      <p className="mt-1">
+                        <span className="font-bold text-gray-100">$1</span> Hot
+                        Sake (small)
+                      </p>
+                      <p className="mt-1">
+                        <span className="font-bold text-gray-100">$2</span>{' '}
+                        Sapporo Draft
+                      </p>
+                      <p className="mt-1">
+                        <span className="font-bold text-gray-100">$3</span> Well
+                        Drinks
+                      </p>
+                      <p className="mt-1">
+                        <span className="font-bold text-gray-100">$4</span>{' '}
+                        Selected Wine
+                      </p>
+                    </div>
                   </div>
-                </div>
-                <div>
-                  <h3 className="mb-4 text-5xl font-bold text-gray-100">
-                    Half Price Wine
-                  </h3>
-                  <h4 className="text-gray-400">
-                    Monday and Thursday all day long
-                  </h4>
-                  <div className="mt-2 text-base text-gray-400">
-                    <p className="mt-1">
-                      <span className="font-bold text-gray-100">50% Off</span>{' '}
-                      Wine and sake bottles over $35
-                    </p>
+                  <div>
+                    <h3 className="mb-4 text-5xl font-bold text-gray-100">
+                      Half Price Wine
+                    </h3>
+                    <h4 className="text-gray-400">
+                      Monday and Thursday all day long
+                    </h4>
+                    <div className="mt-2 text-base text-gray-400">
+                      <p className="mt-1">
+                        <span className="font-bold text-gray-100">50% Off</span>{' '}
+                        Wine and sake bottles over $35
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
+            ) : (
+              ''
+            )}
           </div>
         </div>
       </div>
