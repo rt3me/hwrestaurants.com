@@ -18,7 +18,7 @@ const locationInfo = {
   orderOnline:
     'https://www.toasttab.com/howard-wangs-preston-hollow-4343-west-northwest-highway-345',
   delivery:
-    'Please call us for take out and delivery orders. We offer curbside pick up and deliver within a 2.5 mile radius.',
+    'Please call us for take out and delivery orders. We offer curbside pick up and deliver within a 4 mile radius.',
   reservations: 'Please call the restaurant to make a reservation.',
   hours: [
     'Mon-Thur: 11am - 2pm; 4pm - 9pm',

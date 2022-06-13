@@ -17,7 +17,7 @@ const locationInfo = {
     'Howard Wang‘s Uptown China Brasserie is THE destination for quality Chinese cuisine, great drinks and a relaxing, modern atmosphere.',
   orderOnline: 'https://www.toasttab.com/howard-wangs-uptown',
   delivery:
-    'Please call us for take out and delivery orders. We offer curbside pick up and deliver within a 2.5 mile radius.',
+    'Please call us for take out and delivery orders. We offer curbside pick up and deliver within a 3 mile radius.',
   reservations: 'Please call the restaurant to make a reservation.',
   hours: [
     'Mon-Thur: 11am - 2pm; 4pm - 9pm',
