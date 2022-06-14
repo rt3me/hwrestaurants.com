@@ -30,8 +30,8 @@ const locationInfo = {
   address: ['4343 W. Northwest HWY #345', 'Dallas TX 75220'],
   phone: '214-366-1606',
   fax: '214-366-1627',
-  menuDinner: '/downloads/menu-dinner.pdf',
-  menuCatering: '/downloads/menu-catering.pdf',
+  menuDinner: '/downloads/menu-dinner-preston-hollow.pdf',
+  menuCatering: '/downloads/menu-catering-preston-hollow.pdf',
   specials: false,
 }
 

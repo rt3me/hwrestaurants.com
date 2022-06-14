@@ -29,8 +29,8 @@ const locationInfo = {
   address: ['3223 Lemmon Ave #103', 'Dallas, TX 75204'],
   phone: '214-954-9558',
   fax: '214-954-0988',
-  menuDinner: '/downloads/menu-dinner.pdf',
-  menuCatering: '/downloads/menu-catering.pdf',
+  menuDinner: '/downloads/menu-dinner-uptown.pdf',
+  menuCatering: '/downloads/menu-catering-uptown.pdf',
   specials: true,
 }
 
