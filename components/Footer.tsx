@@ -4,29 +4,29 @@ import logoMarkSVG from '../public/howard-wangs-logomark.svg'
 import styles from './Footer.module.css'
 
 const navigation = {
-  solutions: [
-    { name: 'Marketing', href: '#' },
-    { name: 'Analytics', href: '#' },
-    { name: 'Commerce', href: '#' },
-    { name: 'Insights', href: '#' },
+  locations: [
+    { name: 'China Grill Preston Hollow', href: '/chinagrill' },
+    { name: "Howard Wang's Uptown", href: '/uptown' },
   ],
-  support: [
-    { name: 'Pricing', href: '#' },
-    { name: 'Documentation', href: '#' },
-    { name: 'Guides', href: '#' },
-    { name: 'API Status', href: '#' },
+  mandarintogo: [
+    {
+      name: 'Mandarin Dallas',
+      href: 'https://direct.chownow.com/order/3661/locations/49698',
+    },
+    {
+      name: 'Mandarin Farmers Branch',
+      href: 'https://direct.chownow.com/order/3661/locations/51775',
+    },
   ],
-  company: [
-    { name: 'About', href: '#' },
-    { name: 'Blog', href: '#' },
-    { name: 'Jobs', href: '#' },
+  helpfullinks: [
+    { name: 'Home', href: '/' },
+    { name: 'To Go', href: '/#togo' },
+    {
+      name: 'Catering',
+      href: 'https://ezcater.com/brand/pvt/howard-wangs-uptown',
+    },
     { name: 'Press', href: '#' },
     { name: 'Partners', href: '#' },
-  ],
-  legal: [
-    { name: 'Claim', href: '#' },
-    { name: 'Privacy', href: '#' },
-    { name: 'Terms', href: '#' },
   ],
   social: [
     {
@@ -85,7 +85,7 @@ export default function Footer() {
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
-      <div className="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:py-16 lg:px-8">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8 xl:col-span-1">
             <Image
@@ -111,78 +111,57 @@ export default function Footer() {
               ))}
             </div>
           </div>
-          <div className="mt-12 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
-            <div className="md:grid md:grid-cols-2 md:gap-8">
-              <div>
-                <h3 className="text-sm font-bold uppercase tracking-wider text-gray-100">
-                  Solutions
-                </h3>
-                <ul className="mt-4 space-y-4">
-                  {navigation.solutions.map((item) => (
-                    <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-base text-gray-400 hover:text-gray-500"
-                      >
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="mt-12 md:mt-0">
-                <h3 className="text-sm font-bold uppercase tracking-wider text-gray-100">
-                  Support
-                </h3>
-                <ul className="mt-4 space-y-4">
-                  {navigation.support.map((item) => (
-                    <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-base text-gray-400 hover:text-gray-500"
-                      >
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+          <div className="mt-12 md:grid md:grid-cols-3 md:gap-8 xl:col-span-2 xl:mt-0">
+            <div>
+              <h3 className="text-sm font-bold uppercase tracking-wider text-gray-100">
+                Locations
+              </h3>
+              <ul className="mt-4 space-y-4">
+                {navigation.locations.map((item) => (
+                  <li key={item.name}>
+                    <a
+                      href={item.href}
+                      className="text-base text-gray-400 hover:text-gray-500"
+                    >
+                      {item.name}
+                    </a>
+                  </li>
+                ))}
+              </ul>
             </div>
-            <div className="md:grid md:grid-cols-2 md:gap-8">
-              <div>
-                <h3 className="text-sm font-bold uppercase tracking-wider text-gray-100">
-                  Company
-                </h3>
-                <ul className="mt-4 space-y-4">
-                  {navigation.company.map((item) => (
-                    <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-base text-gray-400 hover:text-gray-500"
-                      >
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="mt-12 md:mt-0">
-                <h3 className="text-sm font-bold uppercase tracking-wider text-gray-100">
-                  Legal
-                </h3>
-                <ul className="mt-4 space-y-4">
-                  {navigation.legal.map((item) => (
-                    <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-base text-gray-400 hover:text-gray-500"
-                      >
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+            <div className="mt-12 md:mt-0">
+              <h3 className="text-sm font-bold uppercase tracking-wider text-gray-100">
+                Mandarin Togo
+              </h3>
+              <ul className="mt-4 space-y-4">
+                {navigation.mandarintogo.map((item) => (
+                  <li key={item.name}>
+                    <a
+                      href={item.href}
+                      className="text-base text-gray-400 hover:text-gray-500"
+                    >
+                      {item.name}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="mt-12 md:mt-0">
+              <h3 className="text-sm font-bold uppercase tracking-wider text-gray-100">
+                Helpful Links
+              </h3>
+              <ul className="mt-4 space-y-4">
+                {navigation.helpfullinks.map((item) => (
+                  <li key={item.name}>
+                    <a
+                      href={item.href}
+                      className="text-base text-gray-400 hover:text-gray-500"
+                    >
+                      {item.name}
+                    </a>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>
