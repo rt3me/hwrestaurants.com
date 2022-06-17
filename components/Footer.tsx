@@ -74,6 +74,7 @@ const navigation = {
       ),
     },
   ],
+  displaySocial: false,
 }
 
 export default function Footer() {
@@ -98,18 +99,22 @@ export default function Footer() {
             <p className="text-base text-gray-400">
               Howard Wang&lsquo;s, a China Brasserie in Texas.
             </p>
-            <div className="flex space-x-6">
-              {navigation.social.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="text-gray-400 hover:text-gray-500"
-                >
-                  <span className="sr-only">{item.name}</span>
-                  <item.icon className="h-6 w-6" aria-hidden="true" />
-                </a>
-              ))}
-            </div>
+            {navigation.displaySocial ? (
+              <div className="flex space-x-6">
+                {navigation.social.map((item) => (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    className="text-gray-400 hover:text-gray-500"
+                  >
+                    <span className="sr-only">{item.name}</span>
+                    <item.icon className="h-6 w-6" aria-hidden="true" />
+                  </a>
+                ))}
+              </div>
+            ) : (
+              ''
+            )}
           </div>
           <div className="mt-12 md:grid md:grid-cols-3 md:gap-8 xl:col-span-2 xl:mt-0">
             <div>
