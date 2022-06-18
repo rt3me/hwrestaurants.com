@@ -19,14 +19,12 @@ const navigation = {
     },
   ],
   helpfullinks: [
-    { name: 'Home', href: '/' },
     { name: 'To Go', href: '/#togo' },
     {
       name: 'Catering',
       href: 'https://ezcater.com/brand/pvt/howard-wangs-uptown',
     },
-    { name: 'Press', href: '#' },
-    { name: 'Partners', href: '#' },
+    { name: 'News', href: '/#news' },
   ],
   social: [
     {
