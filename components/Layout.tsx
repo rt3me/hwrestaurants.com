@@ -68,7 +68,11 @@ function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Layout({ children }) {
+type LayoutProps = {
+  children: React.ReactNode
+}
+
+const Layout: React.FunctionComponent<LayoutProps> = ({ children }) => {
   const [sidebarOpen, setSidebarOpen] = useState(false)
 
   return (
@@ -240,3 +244,5 @@ export default function Layout({ children }) {
     </div>
   )
 }
+
+export default Layout
