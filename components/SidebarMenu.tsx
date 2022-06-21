@@ -3,18 +3,18 @@ import Image from 'next/image'
 import { Fragment, useState } from 'react'
 import { Disclosure, Dialog, Transition } from '@headlessui/react'
 import {
-  LocationMarkerIcon,
-  SparklesIcon,
+  Bars3Icon,
   CalendarIcon,
   ChartBarIcon,
   FolderIcon,
   HomeIcon,
   InboxIcon,
-  MenuIcon,
+  MapPinIcon,
+  SparklesIcon,
   UsersIcon,
-  XIcon,
-} from '@heroicons/react/outline'
-import { ChevronDownIcon } from '@heroicons/react/solid'
+  XMarkIcon,
+} from '@heroicons/react/24/outline'
+import { ChevronDownIcon } from '@heroicons/react/24/solid'
 import combinationMarkSVG from '../public/howard-wangs-combinationmark.svg'
 
 const navigation = [
@@ -33,7 +33,7 @@ const locations = [
       'The ultra contemporary atmosphere brings customers a feeling of relaxation and comfort while dining with family and friends.',
     addressStreet: '4343 W Northwest Hwy #345',
     addressCityStateZip: 'Dallas, TX 75220',
-    icon: LocationMarkerIcon,
+    icon: MapPinIcon,
     href: '/testlanding',
   },
   {
@@ -42,7 +42,7 @@ const locations = [
       "Since our opening in April of 2011, Howard Wang's Uptown China Brasserie has quickly become THE destination for quality Chinese cuisine.",
     addressStreet: '3223 Lemmon Ave #103',
     addressCityStateZip: 'Dallas, TX 75204',
-    icon: LocationMarkerIcon,
+    icon: MapPinIcon,
     href: '/testlanding',
   },
   {
@@ -51,7 +51,7 @@ const locations = [
       "A new concept by Howard Wang's restaurants, Mandarin to Go is the source for your to go meals.",
     addressStreet: '921 W Commerce St',
     addressCityStateZip: 'Dallas, TX 75208',
-    icon: LocationMarkerIcon,
+    icon: MapPinIcon,
     href: '/testlanding',
   },
   {
@@ -60,7 +60,7 @@ const locations = [
       'We regret to inform you that The Star in Frisco is closing down for good.',
     addressStreet: '6740 Winning Dr Suite 1000',
     addressCityStateZip: 'Frisco, TX 75034',
-    icon: LocationMarkerIcon,
+    icon: MapPinIcon,
     href: '#news',
   },
 ]
@@ -139,7 +139,7 @@ const SidebarMenu = () => {
                         onClick={() => setSidebarOpen(false)}
                       >
                         <span className="sr-only">Close sidebar</span>
-                        <XIcon
+                        <XMarkIcon
                           className="h-6 w-6 text-white"
                           aria-hidden="true"
                         />
@@ -241,7 +241,7 @@ const SidebarMenu = () => {
               onClick={() => setSidebarOpen(true)}
             >
               <span className="sr-only">Open sidebar</span>
-              <MenuIcon className="h-6 w-6" aria-hidden="true" />
+              <Bars3Icon className="h-6 w-6" aria-hidden="true" />
             </button>
             <Image
               className="h-20 w-auto justify-self-center sm:h-10"
