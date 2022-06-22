@@ -25,7 +25,7 @@ const locations = [
     addressStreet: '4343 W Northwest Hwy #345',
     addressCityStateZip: 'Dallas, TX 75220',
     icon: MapPinIcon,
-    href: '/testlanding',
+    href: '/chinagrill',
   },
   {
     name: 'Uptown',
@@ -34,7 +34,7 @@ const locations = [
     addressStreet: '3223 Lemmon Ave #103',
     addressCityStateZip: 'Dallas, TX 75204',
     icon: MapPinIcon,
-    href: '/testlanding',
+    href: '/uptown',
   },
   {
     name: 'Mandarin To Go',
@@ -43,7 +43,7 @@ const locations = [
     addressStreet: '921 W Commerce St',
     addressCityStateZip: 'Dallas, TX 75208',
     icon: MapPinIcon,
-    href: '/testlanding',
+    href: '/#togo',
   },
   {
     name: 'Frisco at the Star',
