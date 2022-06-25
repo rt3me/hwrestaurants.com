@@ -26,6 +26,7 @@ const locationInfo = {
     'Sun: 11:30am - 9pm',
   ],
   happyHour: ['Happy hour lounge and patio only:', 'Mon-Fri: 4pm - 7pm'],
+  happyHourDisplay: false,
   address: ['3223 Lemmon Ave #103', 'Dallas, TX 75204'],
   phone: '214-954-9558',
   fax: '214-954-0988',
@@ -164,7 +165,7 @@ const Page: NextPageWithLayout = () => (
                         <dd key={item}>{item}</dd>
                       ))}
                     </div>
-                    {locationInfo.happyHour ? (
+                    {locationInfo.happyHourDisplay ? (
                       <div className="mt-1">
                         <dt className="sr-only">Happy hour</dt>
                         {locationInfo.happyHour.map((item) => (
