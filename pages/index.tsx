@@ -82,11 +82,11 @@ const Page: NextPageWithLayout = () => (
       ```
     */}
     <Head>
-      <title>Test Home Page | Howard Wang&lsquo;s Restaurants</title>
+      <title>Home | Howard Wang&lsquo;s Restaurants</title>
       <link rel="icon" href="/favicon.ico" />
       <meta
-        name="description"
-        content="Test Home Page | Howard Wang&lsquo;s Restaurants is a group of high-end Chinese restaurants based in Texas."
+        name="Howard Wang&lsquo;s Restaurants"
+        content="Howard Wang&lsquo;s Restaurants, a group of high-end Chinese restaurants based in Texas."
       />
     </Head>
     {/* Replace with your content */}

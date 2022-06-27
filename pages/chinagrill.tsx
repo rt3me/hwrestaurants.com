@@ -39,11 +39,11 @@ const locationInfo = {
 const Page: NextPageWithLayout = () => (
   <>
     <Head>
-      <title>Uptown | Howard Wang&lsquo;s Restaurants</title>
+      <title>Preston Hollow | Howard Wang&lsquo;s Restaurants</title>
       <link rel="icon" href="/favicon.ico" />
       <meta
-        name="description"
-        content="Uptown Howard Wang&lsquo;s Restaurants is a group of high-end Chinese restaurants based in Texas."
+        name="Howard Wang&lsquo;s China Grill Preston Hollow"
+        content="China Grill Preston Hollow is one of Howard Wang&lsquo;s Restaurants, a group of high-end Chinese restaurants based in Texas."
       />
     </Head>
     <header>
