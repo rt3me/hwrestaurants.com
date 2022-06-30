@@ -85,7 +85,7 @@ const Page: NextPageWithLayout = () => (
       <title>Home | Howard Wang&lsquo;s Restaurants</title>
       <link rel="icon" href="/favicon.ico" />
       <meta
-        name="Howard Wang&lsquo;s Restaurants"
+        name="description"
         content="Howard Wang&lsquo;s Restaurants, a group of high-end Chinese restaurants based in Texas."
       />
     </Head>
