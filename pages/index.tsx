@@ -46,13 +46,13 @@ const locations = [
     href: '/#togo',
   },
   {
-    name: 'Frisco at the Star',
+    name: 'Mandarin To Go FB',
     description:
-      'We regret to inform you that The Star in Frisco is closing down for good.',
-    addressStreet: '6740 Winning Dr Suite 1000',
-    addressCityStateZip: 'Frisco, TX 75034',
+      "A new concept by Howard Wang's restaurants, Mandarin to Go is the source for your to go meals.",
+    addressStreet: '3230 Towerwood Drive, K-18',
+    addressCityStateZip: 'Farmers Branch, TX 75234',
     icon: MapPinIcon,
-    href: '#news',
+    href: 'https://direct.chownow.com/order/3661/locations/51775',
   },
 ]
 
