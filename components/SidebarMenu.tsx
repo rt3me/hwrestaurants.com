@@ -14,7 +14,6 @@ import {
   UsersIcon,
   XIcon,
 } from '@heroicons/react/outline'
-
 import { ChevronDownIcon } from '@heroicons/react/solid'
 import combinationMarkSVG from '../public/howard-wangs-combinationmark.svg'
 
@@ -81,7 +80,7 @@ const news = [
   },
 ]
 
-const TestHome: NextPage = () => {
+const SidebarMenu = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false)
 
   return (
@@ -523,4 +522,4 @@ const TestHome: NextPage = () => {
   )
 }
 
-export default TestHome
+export default SidebarMenu
