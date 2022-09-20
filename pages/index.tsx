@@ -270,7 +270,7 @@ const Page: NextPageWithLayout = () => (
             Locations
           </h2>
           <p className="mt-4 max-w-3xl text-lg text-gray-200">
-            In our several locations throughout Texas, Howard Wan&lsquo;s
+            In our several locations throughout Texas, Howard Wang&lsquo;s
             Restaurants offers an exceptional dining experience you will not
             want to miss. Click a location for more details.
           </p>
