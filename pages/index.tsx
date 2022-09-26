@@ -30,7 +30,7 @@ const locations = [
   {
     name: 'Uptown',
     description:
-      "Since our opening in April of 2011, Howard Wang's Uptown China Brasserie has quickly become THE destination for quality Chinese cuisine.",
+      'Since our opening in April of 2011, Howard Wang&lsquo;s Uptown China Brasserie has quickly become THE destination for quality Chinese cuisine.',
     addressStreet: '3223 Lemmon Ave #103',
     addressCityStateZip: 'Dallas, TX 75204',
     icon: MapPinIcon,
@@ -39,7 +39,7 @@ const locations = [
   {
     name: 'Mandarin To Go',
     description:
-      "A new concept by Howard Wang's restaurants, Mandarin to Go is the source for your to go meals.",
+      'A new concept by Howard Wang&lsquo;s restaurants, Mandarin to Go is the source for your to go meals.',
     addressStreet: '921 W Commerce St',
     addressCityStateZip: 'Dallas, TX 75208',
     icon: MapPinIcon,
@@ -48,11 +48,20 @@ const locations = [
   {
     name: 'Mandarin To Go FB',
     description:
-      "A new concept by Howard Wang's restaurants, Mandarin to Go is the source for your to go meals.",
+      'A new concept by Howard Wang&lsquo;s restaurants, Mandarin to Go is the source for your to go meals.',
     addressStreet: '3230 Towerwood Drive, K-18',
     addressCityStateZip: 'Farmers Branch, TX 75234',
     icon: MapPinIcon,
     href: 'https://direct.chownow.com/order/3661/locations/51775',
+  },
+  {
+    name: 'Mandarin To Go Live Oak',
+    description:
+      'A new concept by Howard Wang&lsquo;s restaurants, Mandarin to Go is the source for your to go meals.',
+    addressStreet: '4321 Live Oak. St.',
+    addressCityStateZip: 'Dallas, TX 75204',
+    icon: MapPinIcon,
+    href: 'https://direct.chownow.com/order/3661/locations/54182',
   },
 ]
 
@@ -330,6 +339,8 @@ const Page: NextPageWithLayout = () => (
             >
               Online Dallas
             </a>
+          </div>
+          <div className="mt-6 space-y-4 sm:flex sm:space-y-0 sm:space-x-5">
             <a
               href="https://direct.chownow.com/order/3661/locations/51775"
               className="flex items-center justify-center rounded-md border border-transparent bg-black px-4 py-3 text-base font-medium text-white shadow-sm hover:bg-gray-900"
@@ -337,6 +348,14 @@ const Page: NextPageWithLayout = () => (
               rel="noreferrer"
             >
               Online Farmers Branch
+            </a>
+            <a
+              href="https://direct.chownow.com/order/3661/locations/54182"
+              className="flex items-center justify-center rounded-md border border-transparent bg-black px-4 py-3 text-base font-medium text-white shadow-sm hover:bg-gray-900"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Online Live Oak
             </a>
           </div>
         </div>
