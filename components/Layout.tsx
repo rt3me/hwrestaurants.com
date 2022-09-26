@@ -62,6 +62,12 @@ const navigation = [
     icon: MapPinIcon,
     current: false,
   },
+  {
+    name: 'Mandarin Live Oak',
+    href: 'https://direct.chownow.com/order/3661/locations/54182',
+    icon: MapPinIcon,
+    current: false,
+  },
 ]
 
 function classNames(...classes: string[]) {
