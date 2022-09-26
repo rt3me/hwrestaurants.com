@@ -17,6 +17,10 @@ const navigation = {
       name: 'Mandarin Farmers Branch',
       href: 'https://direct.chownow.com/order/3661/locations/51775',
     },
+    {
+      name: 'Mandarin Live Oak',
+      href: 'https://direct.chownow.com/order/3661/locations/54182',
+    },
   ],
   helpfullinks: [
     { name: 'To Go', href: '/#togo' },
